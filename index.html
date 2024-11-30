@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Kyle Jones - Web Resume</title>
+        <!-- "<link rel="stylesheet" href="css/bootstrap.css">
+        <script src="js/bootstrap.js"></script>" is an alternate way to incorporate Bootstrap -->
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="container mt-4 mb-5 bg-light p-3 rounded">
+        <div class="row align-items-center">
+            <div class="col-md-4 mb-3 mb-md-0">
+                <img src="profile.img" alt="Professional profile photo of Kyle Jones">
+            </div>
+            <!-- -->
+            <div class="col-md-8">
+                <h1 class="display-4">Kyle Jones</h1>
+                <p class="lead">Welcome to my professional web resume.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav class="container p-3 my-4 rounded bg-light">
+        <div class="row">
+            <div class="col">
+                <!-- Class "h4" only effects style and should be used to change style and maintain order of importance -->
+                <h2 class="h4">Contact</h2>
+                <p>Email: LetKyleHelpYou@gmail.com</p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/kyle-jones-0030a6320/">Kyle Jones</a></p>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Skills Section -->
+     <section class="container my-4">
+        <h2 class="h4">Skills</h2>
+        <table class="table table-striped table-light">
+            <thead>
+                <tr>
+                    <th>Technology</th>
+                    <th>Proficiency</th>
+                    <th>Years of Experience</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>HTML/CSS</td>
+                    <td>Expert</td>
+                    <td>5</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Intermediate</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+        </table>
+     </section>
+
+    <!-- Education Section -->
+    <article class="container my-4 bg-info text-white p-3 rounded">
+        <h2 class="h4">Education</h2>
+        <ul class="list-unstyled">
+            <li><a href="https://universitywebsite.com"><strong>University Name</strong></a></li>
+        </ul>
+    </article>
+
+    <!-- Work Experience Section -->
+    <article class="container my-4">
+        <h2 class="h4">Work Experience</h2>
+        <p><strong> Job Title</strong>, Company Name <em>(year-year)</em></p>
+    </article>
+    
+    <!-- Testimonials Section -->
+    <aside class="container my-4 bg-success text-white rounded">
+        <h2 class="h4">Testimonials</h2>
+        <blockquote class="blockquote">
+            <p class="mb-0">"Kyle Jones has been an exceptional team player, consistently delivering projects on time and with ihgh quality."</p>
+        </blockquote>
+        <footer class="blockquote-footer">Fiona Smith, Project Manager at Company Name</footer>
+    </aside>
+
+    <!-- Recent Projects Section -->
+    <section class="container my-4 bg-light p-3 border rounded">
+        <h2 class="h4">Recent Projects</h2>
+        <p>Project Name: Website Redesign</p>
+        <pre><code>&lt;!-- HTML structure of the redesigned homepage --&gt;
+            &lt;div class="container"&gt;
+            &lt;header&gt;...&lt;/header&gt;
+            &lt;nav&gt;...&lt;/nav&gt;
+            &lt;main&gt;...&lt;/main&gt;
+            &lt;footer&gt;...&lt;/footer&gt;
+            &lt;/div&gt;
+        </code></pre>
+    </section>
+
+    <!-- Podcast Features Section -->
+    <section class="container my-4">
+        <h2>Podcast Features</h2>
+        <audio controls>
+            <source src="podcast.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <!-- Project Highlights Section -->
+    <section class="container my-4">
+        <h2>Project Highlights</h2>
+        <video width="100%" height="auto" controls>
+            <source src="project_demo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- Tutorials & Talks Section -->
+    <section class="container my-4 bg-warning text-dark p-3 rounded">
+        <h2>Tutorials & Talks</h2>
+        <iframe width="100%" height="315" src="https://wwww.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope"></iframe>
+    </section>
+
+    <!-- Contact Form Section -->
+    <aside class="container my-4 bg-primary text-white p-3 rounded">
+        <h1 class="h4">Contact Me</h1>
+        <form action="/submit" method="post">
+            <fieldset>
+                <legend class="h6"> Contact Information</legend>
+
+                <label for="full-name">Full Name</label>
+                <input type="text" name="full-name" id="full-name" placeholder="Enter your full name">
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="phone" id="phone" placeholder="Enter your phone number" pattern="[0-9]{10}">
+            </fieldset>
+
+            <div>
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="6" placeholder="Your message here" required></textarea>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </aside>
+
+    <!-- Footer Section -->
+    <footer class="container-fluid py-3 mt-5 text-center bg-dark">
+        <p class="text-muted">&copy; 2024 Kyle Jones. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
